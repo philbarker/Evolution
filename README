@@ -1,0 +1,10 @@
+Evolution: a project to demostrate how the principles
+of evolution--random mutation and selection of the
+fittest--can turn a square wheel into one of a more
+suitable shape.
+
+Files: 
+shape.html select some of the parameters, display results
+shape.js mostly uses canvass
+
+contact: phil@pjjk.net
