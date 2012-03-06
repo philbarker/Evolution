@@ -1,7 +1,5 @@
-//shape object, creating an object which is an array of x,y points (a shape)
-//plus some properties of that shape, e.g. variance of points from centre
 
-var shapes = new Array();
+var shapes = new Array(); //an array of shape objects
 
 function start() {
 	var initForm = document.forms[0];
@@ -12,7 +10,6 @@ function start() {
 		var newShape = new shape(75,75,100,100,5,canvasID); 
 		shapes.push(newShape);
 	}
-
 	var x = 0;
 	var y = 1;
 	for (var j=0;j<shapes.length;j++) {	
@@ -48,6 +45,8 @@ function tenGens() {
 }
 
 function shape(xinit,yinit,w,h,incr,canvasID) {
+//shape object, creating an object which is an array of x,y points (a shape)
+//plus some properties of that shape, e.g. variance of points from centre
    this.points = new Array();
 	for (var x=xinit;x<=xinit+w;x=x+incr) {	
 		this.points.push([x,yinit]);
